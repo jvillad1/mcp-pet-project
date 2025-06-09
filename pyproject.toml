@@ -4,7 +4,12 @@ version = "0.1.0"
 description = "MCP servers collection"
 requires-python = ">=3.10"
 dependencies = [
+    "isort>=6.0.1",
+    "langchain-mcp-adapters>=0.1.7",
+    "langchain-openai>=0.3.21",
+    "langgraph>=0.4.8",
     "mcp[cli]>=1.2.0",
+    "python-dotenv>=1.1.0",
 ]
 
 [build-system]
