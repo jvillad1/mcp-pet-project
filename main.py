@@ -2,6 +2,7 @@ import asyncio
 import os
 
 from dotenv import load_dotenv
+from langchain_core.messages import HumanMessage
 from langchain_mcp_adapters.tools import load_mcp_tools
 from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
@@ -29,6 +30,16 @@ stdio_server_parameters = StdioServerParameters(
 
 async def main():
     print("Hello from mcp-pet-project!")
+    async with stdio_client(stdio_server_parameters) as (read, write):
+        async with ClientSession(read_stream=read, write_stream=write) as session:
+            await session.initialize()
+            print("Session initialized")
+            tools = await load_mcp_tools(session)
+            print(tools)
+
+            agent = create_react_agent(llm, tools)
+            result = await agent.ainvoke({"messages": [HumanMessage(content="What is 2 + 2?")]})
+            print(result["messages"][-1].content)
 
 if __name__ == "__main__":
     asyncio.run(main())
