@@ -275,9 +275,9 @@ langgraph==0.4.8 \
     --hash=sha256:273b02782669a474ba55ef4296607ac3bac9e93639d37edc0d32d8cf1a41a45b \
     --hash=sha256:48445ac8a351b7bdc6dee94e2e6a597f8582e0516ebd9dea0fd0164ae01b915e
     # via mcp-servers
-langgraph-checkpoint==2.0.26 \
-    --hash=sha256:2b800195532d5efb079db9754f037281225ae175f7a395523f4bf41223cbc9d6 \
-    --hash=sha256:ad4907858ed320a208e14ac037e4b9244ec1cb5aa54570518166ae8b25752cec
+langgraph-checkpoint==3.0.0 \
+    --hash=sha256:560beb83e629784ab689212a3d60834fb3196b4bbe1d6ac18e5cad5d85d46010 \
+    --hash=sha256:f738695ad938878d8f4775d907d9629e9fcd345b1950196effb08f088c52369e
     # via
     #   langgraph
     #   langgraph-prebuilt
