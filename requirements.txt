@@ -254,9 +254,9 @@ jsonpointer==3.0.0 \
     --hash=sha256:13e088adc14fca8b6aa8177c044e12701e6ad4b28ff10e65f2267a90109c9942 \
     --hash=sha256:2b2d729f2091522d61c3b31f82e11870f60b68f43fbc705cb76bf4b832af59ef
     # via jsonpatch
-langchain-core==0.3.64 \
-    --hash=sha256:71b51bf77003eb57e74b8fa2a84ac380e24aa7357f173b51645c5834b9fc0d62 \
-    --hash=sha256:e844c425329d450cb3010001d86b61fd59a6a17691641109bae39322c85e27dd
+langchain-core==0.3.81 \
+    --hash=sha256:0473e7cffbba06017393f2f1ee116da098c298e4ec478ada91d321f42dff921c \
+    --hash=sha256:d0f34c88254d78ccb1b9a038f860d13dea90186045026fd8fc3e1265eed73a4e
     # via
     #   langchain-mcp-adapters
     #   langchain-openai
